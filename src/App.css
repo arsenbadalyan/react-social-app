@@ -1,38 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    color: inherit;
+    font-size: inherit;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
 .App {
-  text-align: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    padding: 20px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    margin-bottom: 10px;
+    background: lightgray;
+}
+.header__logo img {
+    max-height: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content {
+    display: flex;
+    gap: 10px;
+}
+/* Sidebar */
+.sidebar {
+    width: 20%;
+    background: orange;
+}
+.sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0;
+}
+.sidebar nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    cursor: pointer;
+}
+.sidebar nav ul li:hover {
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+/* Main Content */
+.main-content {
+    width: 80%;
+}
+/* Cover Image Part */
+.user-cover-image {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.user-cover-image img {
+    width: 100%;
+    height: 100%;
+}
+/* User Info Part Profile Picture and Main Info */
+.user-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.user-info__profile-picture {
+    width: 5rem;
+    height: 5rem;
+}
+.user-info__profile-picture img {
+    width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-info__main-info {
+    margin-left: 20px;
+}
+.user-info__main-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+/* Make Post */
+.make-post > div {
+    margin-bottom: 0.5rem;
+}
+.make-post .make-post__header {
+    font-size: 1.5rem;
+}
+.make-post .make-post__textarea textarea {
+    background: lightsalmon;
+    width: 100%;
+    padding: 1rem;
+    letter-spacing: 1px;
+    resize: none;
+}
+.make-post .make-post__textarea textarea::placeholder {
+    color: white;
+}
+.make-post .make-post__btn {
+    width: 100%;
+    background: greenyellow;
+    padding: 1rem;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 300ms linear;
+}
+.make-post .make-post__btn:hover {
+    color: greenyellow;
+    background: black;
 }
