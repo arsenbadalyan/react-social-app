@@ -1,4 +1,5 @@
 import React from 'react';
+import ProfilePosts from './ProfilePosts/ProfilePosts';
 import classes from './Profile.module.css';
 
 const Profile = () => {
@@ -27,23 +28,7 @@ const Profile = () => {
                     </ul>
                 </div>
             </div>
-            <div className={classes.make_post}>
-                <div className={classes.make_post__header}>
-                    <h4>My Posts</h4>
-                </div>
-                <div className={classes.make_post__textarea}>
-                    <textarea
-                        name=""
-                        id=""
-                        cols="30"
-                        rows="10"
-                        placeholder="Whats new??"
-                    ></textarea>
-                </div>
-                <div className={classes.make_post__btn}>
-                    <button>POST</button>
-                </div>
-            </div>
+            <ProfilePosts />
         </div>
     );
 };

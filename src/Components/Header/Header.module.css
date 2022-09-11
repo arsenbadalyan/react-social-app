@@ -1,0 +1,17 @@
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    margin-bottom: 10px;
+    background: orange;
+    border-radius: 15px;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+.header__logo img {
+    height: 40px;
+}

@@ -2,6 +2,8 @@
 .sidebar {
     width: 20%;
     background: orange;
+    position: relative;
+    border-radius: 20px;
 }
 .sidebar nav ul {
     display: flex;
@@ -20,4 +22,8 @@
     background: black;
     color: white;
     font-weight: bold;
+}
+.activeLink {
+    color: white;
+    background: black;
 }

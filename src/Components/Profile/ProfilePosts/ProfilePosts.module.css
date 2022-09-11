@@ -1,38 +1,3 @@
-/* Cover Image Part */
-.user_cover_image {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 10px;
-    overflow: hidden;
-}
-.user_cover_image img {
-    width: 100%;
-    height: 100%;
-}
-/* User Info Part Profile Picture and Main Info */
-.user_info {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.user_info__profile_picture {
-    width: 5rem;
-    height: 5rem;
-}
-.user_info__profile_picture img {
-    width: 100%;
-}
-
-.user_info__main_info {
-    margin-left: 20px;
-}
-.user_info__main_info h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-}
-
 /* Make Post */
 .make_post > div {
     margin-bottom: 0.5rem;
@@ -65,4 +30,10 @@
 .make_post .make_post__btn:hover {
     color: greenyellow;
     background: black;
+}
+
+/* Post List */
+.postList {
+    width: 100%;
+    margin: 15px 0;
 }
